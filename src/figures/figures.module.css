@@ -1,0 +1,58 @@
+.scroll {
+  overflow-x: auto;
+}
+
+/* REPL */
+.repl {
+  padding: var(--space-4);
+  background: var(--ink);
+  color: #e9e6df;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.75;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.prompt {
+  color: #9a958c;
+}
+
+.output {
+  color: #b9b4aa;
+}
+
+/* Pipeline */
+.pipeline {
+  display: grid;
+  grid-template-columns: 120px repeat(8, minmax(0, 1fr));
+  gap: 4px;
+  min-width: 460px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-align: center;
+}
+
+.cycle {
+  padding: 6px 0;
+  color: var(--ink-muted);
+}
+
+.instruction {
+  padding: 10px 0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.stage {
+  padding: 10px 0;
+  border: 1px solid var(--ink);
+}
+
+.stall {
+  padding: 10px 0;
+  border: 1px solid var(--signal);
+  background: var(--signal);
+  color: #ffffff;
+  font-weight: 600;
+}

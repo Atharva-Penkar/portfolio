@@ -2,10 +2,12 @@ import TitleBlock from "../components/title_block/titleBlock.jsx";
 import Section from "../components/section/section.jsx";
 import StatGrid from "../components/stat_grid/statGrid.jsx";
 import ExperienceList from "../components/experience_list/experienceList.jsx";
+import ProjectEntry from "../components/project_entry/projectEntry.jsx";
 import SpecTable from "../components/spec_table/specTable.jsx";
 import ContactBlock from "../components/contact_block/contactBlock.jsx";
 import { overview, stats } from "../data/profile.js";
 import { experience } from "../data/experience.js";
+import { projects } from "../data/projects.js";
 import { skills } from "../data/skills.js";
 import styles from "./home.module.css";
 
@@ -27,8 +29,10 @@ export default function Home() {
         <ExperienceList items={experience} />
       </Section>
 
-      <Section number="3.0" title="Projects" id="projects">
-        <p>Projects go here.</p>
+      <Section number="3.0" title="Projects" id="projects" stacked>
+        {projects.map((project) => (
+          <ProjectEntry key={project.id} project={project} />
+        ))}
       </Section>
 
       <Section number="4.0" title="Skills" id="skills">
