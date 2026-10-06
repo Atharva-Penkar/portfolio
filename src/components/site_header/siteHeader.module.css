@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2) var(--space-5);
+  padding: var(--space-3) 0;
+  border-bottom: 2px solid var(--ink);
+  text-transform: uppercase;
+}
+
+.meta,
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+}
+
+.meta {
+  color: var(--ink-muted);
+}
+
+.docId {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.nav a {
+  padding: var(--space-2) 0;
+  text-decoration: none;
+}

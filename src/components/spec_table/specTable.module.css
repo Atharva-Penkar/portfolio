@@ -1,0 +1,30 @@
+.caption {
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--ink);
+  text-transform: uppercase;
+}
+
+.table {
+  margin: 0;
+  font-size: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: var(--space-3);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.row:last-child {
+  border-bottom-color: var(--ink);
+}
+
+.row dt {
+  color: var(--ink-muted);
+}
+
+.row dd {
+  margin: 0;
+}

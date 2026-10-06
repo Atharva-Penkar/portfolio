@@ -1,0 +1,28 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-6);
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.heading {
+  flex: 1 1 220px;
+}
+
+.number {
+  font-weight: 600;
+  color: var(--signal);
+}
+
+.title {
+  margin-top: var(--space-1);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.content {
+  flex: 999 1 560px;
+  min-width: 0;
+}

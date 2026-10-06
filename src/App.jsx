@@ -1,13 +1,16 @@
 import { Routes, Route } from "react-router";
-
-function Home() {
-  return <h1>Atharva Penkar</h1>;
-}
+import SiteHeader from "./components/site_header/siteHeader.jsx";
+import SiteFooter from "./components/site_footer/siteFooter.jsx";
+import Home from "./pages/home.jsx";
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-    </Routes>
+    <div className="container">
+      <SiteHeader />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <SiteFooter />
+    </div>
   );
 }
