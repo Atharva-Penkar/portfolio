@@ -1,7 +1,8 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 const icons = {
+  mail: FaEnvelope,
   github: FaGithub,
   linkedin: FaLinkedin,
   leetcode: SiLeetcode,
