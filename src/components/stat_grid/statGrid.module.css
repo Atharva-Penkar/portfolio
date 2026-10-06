@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 var(--space-4);
+  margin: 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-3) 0;
+  border-top: 1px solid var(--rule);
+}
+
+.stat:nth-child(-n + 2) {
+  border-top-color: var(--ink);
+}
+
+.value {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.stat dt {
+  color: var(--ink-muted);
+}

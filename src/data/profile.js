@@ -7,7 +7,10 @@ export const profile = {
   email: "22cs02011@iitbbs.ac.in",
   links: [
     { label: "GitHub", href: "https://github.com/Atharva-Penkar" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/atharva-penkar/?isSelfProfile=true" },
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/atharva-penkar/?isSelfProfile=true",
+    },
     { label: "LeetCode", href: "https://leetcode.com/u/Atharva_Penkar/" },
   ],
   keyFacts: [
@@ -18,6 +21,16 @@ export const profile = {
     ["Languages", "C, C++, Python, Java"],
   ],
 };
+
+export const overview =
+  "Most of what I build sits below the application layer. At Microsoft I validated the kernel implementation behind multi-disk crash-consistent snapshots. On my own time I have written a Redis-compatible store from the socket up, a pipelined RISC-V simulator, and a model of the MESI coherence protocol.";
+
+export const stats = [
+  { value: "79", label: "kernel driver unit tests" },
+  { value: "30+", label: "RISC-V instructions simulated" },
+  { value: "15+", label: "Redis commands implemented" },
+  { value: "50", label: "concurrent chat clients" },
+];
 
 export const sections = [
   { number: "1.0", title: "Overview", id: "overview" },
