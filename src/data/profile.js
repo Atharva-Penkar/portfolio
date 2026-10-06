@@ -6,12 +6,21 @@ export const profile = {
     "I work close to the machine: kernel drivers, storage engines, CPU pipelines and the protocols that keep caches consistent. Dual degree in Computer Science at IIT Bhubaneswar, former intern Microsoft.",
   email: "22cs02011@iitbbs.ac.in",
   links: [
-    { label: "GitHub", href: "https://github.com/Atharva-Penkar" },
+    {
+      label: "GitHub",
+      href: "https://github.com/Atharva-Penkar",
+      icon: "github",
+    },
     {
       label: "LinkedIn",
-      href: "https://www.linkedin.com/in/atharva-penkar/?isSelfProfile=true",
+      href: "https://www.linkedin.com/in/atharva-penkar/",
+      icon: "linkedin",
     },
-    { label: "LeetCode", href: "https://leetcode.com/u/Atharva_Penkar/" },
+    {
+      label: "LeetCode",
+      href: "https://leetcode.com/u/Atharva_Penkar/",
+      icon: "leetcode",
+    },
   ],
   keyFacts: [
     ["Institute", "IIT Bhubaneswar"],

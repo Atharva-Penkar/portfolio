@@ -31,6 +31,7 @@ export default function ProjectEntry({ project }) {
                 target="_blank"
                 rel="noreferrer"
               >
+                {link.label}
                 <Icon name={link.icon} size={16} />
               </a>
             ))}

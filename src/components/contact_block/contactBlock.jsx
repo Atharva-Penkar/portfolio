@@ -4,7 +4,7 @@ import styles from "./contactBlock.module.css";
 
 export default function ContactBlock() {
   return (
-    <div>
+    <div className={styles.block}>
       <a className={styles.email} href={`mailto:${profile.email}`}>
         {profile.email}
       </a>

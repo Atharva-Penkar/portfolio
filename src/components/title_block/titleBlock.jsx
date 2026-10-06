@@ -1,4 +1,5 @@
 import { profile } from "../../data/profile.js";
+import { goToSection } from "../../utils/scrollTo.js";
 import SpecTable from "../spec_table/specTable.jsx";
 import styles from "./titleBlock.module.css";
 
@@ -17,6 +18,7 @@ export default function Hero() {
           <a
             className={`${styles.button} ${styles.primary} mono`}
             href="#projects"
+            onClick={(event) => goToSection(event, "projects")}
           >
             Read the projects
           </a>

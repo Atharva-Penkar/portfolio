@@ -15,7 +15,11 @@ export const projects = [
     figure: "repl",
     caption: "Fig. 1. A session against the server.",
     links: [
-      { label: "GitHub", href: "https://github.com/Atharva-Penkar/mini-redis" },
+      {
+        label: "GitHub",
+        href: "https://github.com/Atharva-Penkar/mini-redis",
+        icon: "github",
+      },
     ],
   },
   {
@@ -37,6 +41,7 @@ export const projects = [
       {
         label: "GitHub",
         href: "https://github.com/Atharva-Penkar/RISC-V-CPU-Simulator",
+        icon: "github",
       },
     ],
   },
@@ -77,6 +82,7 @@ export const projects = [
       {
         label: "GitHub",
         href: "https://github.com/asingh772004/Computer-Networks-Chat-Application",
+        icon: "github",
       },
     ],
   },

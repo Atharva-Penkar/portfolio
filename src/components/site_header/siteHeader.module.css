@@ -27,6 +27,7 @@
 .docId {
   color: var(--ink);
   font-weight: 600;
+  text-decoration: none;
 }
 
 .nav a {
