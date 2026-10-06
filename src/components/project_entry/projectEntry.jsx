@@ -1,6 +1,7 @@
 import SpecTable from "../spec_table/specTable.jsx";
 import ReplFigure from "../../figures/replFigure.jsx";
 import PipelineFigure from "../../figures/pipelineFigure.jsx";
+import Icon from "../icons/icons.jsx";
 import styles from "./projectEntry.module.css";
 
 const figures = {
@@ -30,7 +31,7 @@ export default function ProjectEntry({ project }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                {link.label}
+                <Icon name={link.icon} size={16} />
               </a>
             ))}
           </div>
