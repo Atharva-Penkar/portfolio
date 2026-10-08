@@ -5,7 +5,7 @@ import styles from "./titleBlock.module.css";
 
 export default function titleBlock() {
   return (
-    <section className={styles.hero}>
+    <section className={styles.titleBlock}>
       <div className={styles.intro}>
         <div className={`${styles.role} mono`}>{profile.role}</div>
         <h1 className={styles.name}>
