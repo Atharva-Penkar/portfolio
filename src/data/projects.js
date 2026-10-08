@@ -66,6 +66,7 @@ export const projects = [
     number: "3.4",
     area: "Computer networks",
     title: "Terminal Chat Application",
+    team: true,
     summary:
       "A concurrent chat server and an Ncurses client, built on raw sockets and POSIX threads.",
     specs: [

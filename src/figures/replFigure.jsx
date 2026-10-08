@@ -4,7 +4,7 @@ const session = [
   ['SET user:1 "atharva"', "OK"],
   ["LPUSH queue job:42 job:43", "(integer) 2"],
   ["HSET session:9 lang cpp", "(integer) 1"],
-  ["HGETALL session:9", '1) "mpp"', '2) "cmake"'],
+  ["HGETALL session:9", '1) "lang"', '2) "cpp"'],
 ];
 
 export default function ReplFigure() {

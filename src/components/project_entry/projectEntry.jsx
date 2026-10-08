@@ -18,6 +18,7 @@ export default function ProjectEntry({ project }) {
       <div className={styles.text}>
         <div className={`${styles.label} mono`}>
           {project.number} / {project.area}
+          {project.team && " / Team project"}
         </div>
         <h3 className={styles.title}>{project.title}</h3>
         <p className={styles.summary}>{project.summary}</p>

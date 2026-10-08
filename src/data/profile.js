@@ -5,6 +5,8 @@ export const profile = {
   summary:
     "I work close to the machine: kernel drivers, storage engines, CPU pipelines and the protocols that keep caches consistent. Dual degree in Computer Science at IIT Bhubaneswar, former intern Microsoft.",
   email: "22cs02011@iitbbs.ac.in",
+  availability:
+    "Open to internship and full-time Software Development and Engineering Roles.",
   links: [
     {
       label: "GitHub",

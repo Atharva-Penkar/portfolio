@@ -9,22 +9,28 @@ export default function ContactBlock() {
   ];
 
   return (
-    <div className={styles.links}>
-      {links.map((link) => {
-        const external = link.href.startsWith("http");
-        return (
-          <a
-            key={link.label}
-            href={link.href}
-            target={external ? "_blank" : undefined}
-            rel={external ? "noreferrer" : undefined}
-            aria-label={link.label}
-            title={link.label}
-          >
-            <Icon name={link.icon} size={26} />
-          </a>
-        );
-      })}
+    <div className={styles.block}>
+      <p className={styles.availability}>{profile.availability}</p>
+      <a className={`${styles.email} mono`} href={`mailto:${profile.email}`}>
+        {profile.email}
+      </a>
+      <div className={styles.links}>
+        {links.map((link) => {
+          const external = link.href.startsWith("http");
+          return (
+            <a
+              key={link.label}
+              href={link.href}
+              target={external ? "_blank" : undefined}
+              rel={external ? "noreferrer" : undefined}
+              aria-label={link.label}
+              title={link.label}
+            >
+              <Icon name={link.icon} size={26} />
+            </a>
+          );
+        })}
+      </div>
     </div>
   );
 }

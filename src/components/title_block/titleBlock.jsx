@@ -3,7 +3,7 @@ import { goToSection } from "../../utils/scrollTo.js";
 import SpecTable from "../spec_table/specTable.jsx";
 import styles from "./titleBlock.module.css";
 
-export default function Hero() {
+export default function titleBlock() {
   return (
     <section className={styles.hero}>
       <div className={styles.intro}>

@@ -7,10 +7,15 @@
   padding: var(--space-3) 0;
   border-bottom: 2px solid var(--ink);
   text-transform: uppercase;
-  position: sticky;
-  top: 0;
-  z-index: 10;
   background: var(--paper);
+}
+
+@media (min-width: 720px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
 }
 
 .meta,
